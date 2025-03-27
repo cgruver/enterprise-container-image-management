@@ -1,0 +1,4 @@
+# Use a specific version tag to get patches on each build without an unexpected update
+FROM registry.access.redhat.com/ubi9:9.5
+
+# Put enterprise common stuff here
