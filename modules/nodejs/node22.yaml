@@ -1,0 +1,12 @@
+schema_version: 1
+name: node
+version: v22
+description: "Installs NodeJS v22"
+args:
+- name: NODE_VERSION
+  value: v22.22.0
+envs:
+- name: PATH
+  value: ${PATH}:/usr/local/node/bin
+execute:
+- script: install.sh

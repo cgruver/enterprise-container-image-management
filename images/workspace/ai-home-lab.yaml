@@ -1,0 +1,13 @@
+name: dev-tools/ai-home-lab
+from: nexus.clg.lab:5002/dev-spaces/workspace-base:ubi10
+version: latest
+packages:
+  manager: dnf
+  manager_flags: "--disableplugin=subscription-manager --setopt=tsflags=nodocs --setopt=install_weak_deps=0"
+modules:
+  repositories:
+  - git:
+      url: https://github.com/cgruver/enterprise-container-image-management.git
+      ref: main
+  install:
+  - name: openvino
