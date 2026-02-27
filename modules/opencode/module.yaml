@@ -1,0 +1,9 @@
+schema_version: 1
+name: opencode
+version: 1
+description: "Installs OpenCode AI"
+args:
+- name: OPEN_CODE_VERSION
+  value: v1.2.13
+execute:
+- script: install.sh
